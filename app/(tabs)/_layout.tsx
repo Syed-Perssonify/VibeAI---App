@@ -22,7 +22,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="sessions"
+        name="dessions"
         options={{
           title: "Sessions",
           tabBarIcon: ({ color }) => <Users size={24} color={color} />,

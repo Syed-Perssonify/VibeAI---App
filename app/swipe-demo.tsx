@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import Button from "@/components/buttom";
 import SwipeCard from "@/components/SwipeCard";
 import {
   assessPersonality,
@@ -11,9 +11,6 @@ import { Heart, X } from "lucide-react-native";
 import React, { useEffect, useState } from "react";
 import { Alert, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import Button from "@/components/Button";
-import { SwipeResult } from "@/types/user";
-import { X, Heart } from "lucide-react-native";
 
 export default function SwipeDemoScreen() {
   const { user, currentSession, updateSession } = useUser();
@@ -195,6 +192,7 @@ export default function SwipeDemoScreen() {
         <Button
           title=""
           onPress={() => handleSwipe("right")}
+          variant="outline"
           style={[styles.actionButton, styles.likeButton]}
           textStyle={styles.actionButtonText}
         >

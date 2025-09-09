@@ -1,5 +1,5 @@
-import Button from "@/components/Button";
-import Input from "@/components/Input";
+import Button from "@/components/buttom";
+import Input from "@/components/input";
 import { useUser } from "@/hooks/user-store";
 import { User } from "@/types/user";
 import { router } from "expo-router";

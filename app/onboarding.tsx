@@ -1,19 +1,19 @@
+import Button from "@/components/buttom";
+import Input from "@/components/input";
+import { INDIAN_STATES } from "@/constants/vibes";
+import { useUser } from "@/hooks/user-store";
+import { router } from "expo-router";
+import { ChevronDown } from "lucide-react-native";
 import React, { useState } from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
   Alert,
-  TouchableOpacity,
   ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
-import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useUser } from "@/hooks/user-store";
-import Button from "@/components/Button";
-import Input from "@/components/Input";
-import { INDIAN_STATES } from "@/constants/vibes";
-import { ChevronDown } from "lucide-react-native";
 
 const INTERESTS = [
   "Adventure Sports",

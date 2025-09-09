@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import Button from "@/components/buttom";
 import { useUser } from "@/hooks/user-store";
 import { Calendar, Heart, MapPin, User } from "lucide-react-native";
 import React from "react";

@@ -1,10 +1,10 @@
-import React from 'react';
-import { StyleSheet, Text, TextStyle, TouchableOpacity, ViewStyle } from 'react-native';
-  TouchableOpacity,
-  Text,
+import React from "react";
+import {
   StyleSheet,
-  ViewStyle,
+  Text,
   TextStyle,
+  TouchableOpacity,
+  ViewStyle,
 } from "react-native";
 
 interface ButtonProps {

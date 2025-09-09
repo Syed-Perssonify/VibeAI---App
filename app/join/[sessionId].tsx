@@ -1,5 +1,5 @@
-import Button from "@/components/Button";
-import Input from "@/components/Input";
+import Button from "@/components/buttom";
+import Input from "@/components/input";
 import { useUser } from "@/hooks/user-store";
 import { User } from "@/types/user";
 import { router, useLocalSearchParams } from "expo-router";
@@ -9,7 +9,7 @@ import { Alert, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function JoinSessionScreen() {
-  const { sessionId, invite } = useLocalSearchParams<{
+  const { invite } = useLocalSearchParams<{
     sessionId: string;
     invite?: string;
   }>();
@@ -72,7 +72,7 @@ export default function JoinSessionScreen() {
       };
 
       // Create the session
-      const session = await createSwipeSession(friendUser, invite);
+      await createSwipeSession(friendUser, invite);
 
       Alert.alert(
         "Session Joined!",
@@ -130,7 +130,7 @@ export default function JoinSessionScreen() {
         <UserPlus size={64} color="#FF8C42" />
 
         <Text style={styles.title}>
-          Join {inviteLink.inviterName}'s Session
+          Join {inviteLink.inviterName}&apos;s Session
         </Text>
         <Text style={styles.subtitle}>
           Complete your profile to start planning the perfect outing together
@@ -184,7 +184,7 @@ export default function JoinSessionScreen() {
         <View style={styles.infoCard}>
           <Text style={styles.infoTitle}>What happens next?</Text>
           <Text style={styles.infoText}>
-            1. You'll swipe on activity images{"\n"}
+            1. You&apos;ll swipe on activity images{"\n"}
             2. AI analyzes both your preferences{"\n"}
             3. Get a personalized outing plan for both of you
           </Text>

@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import Button from "@/components/buttom";
 import { router, useLocalSearchParams } from "expo-router";
 import { Brain, MapPin, Star } from "lucide-react-native";
 import React from "react";

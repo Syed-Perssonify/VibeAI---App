@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import Button from "@/components/buttom";
 import { useUser } from "@/hooks/user-store";
 import { SwipeSession, User } from "@/types/user";
 import { router } from "expo-router";
